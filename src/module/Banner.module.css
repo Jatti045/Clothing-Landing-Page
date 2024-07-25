@@ -1,0 +1,20 @@
+.infoTextContainer {
+  background-color: var(--secondary-color);
+  padding: 15px 0;
+  text-align: center;
+}
+
+.infoTextContainer p {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .infoTextContainer {
+    padding: 5px 0;
+  }
+  .infoTextContainer p {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}

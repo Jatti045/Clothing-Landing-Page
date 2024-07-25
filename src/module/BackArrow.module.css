@@ -1,0 +1,12 @@
+.arrowBack {
+  display: block;
+  max-width: 1%;
+  margin: 60px 0 -20px 100px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .arrowBack {
+    margin: 20px 20px 0;
+  }
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "item": "shirts",
+    "name": "Classic T-Shirt",
+    "category": "mens",
+    "description": "A timeless white t-shirt made from 100% cotton. Comfortable and versatile for any casual occasion.",
+    "price": 19.99,
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://cdn11.bigcommerce.com/s-ce94a/images/stencil/640w/attribute_rule_images/17248196_source_1677370837.jpg"
+  },
+  {
+    "id": 2,
+    "item": "jackets",
+    "name": "Denim Jacket",
+    "category": "mens",
+    "description": "Classic denim jacket made from sturdy fabric. Perfect for layering in various weather conditions.",
+    "price": 89.99,
+    "sizes": ["M", "L", "XL"],
+    "image": "https://www.gapfactory.com/webcontent/0013/873/623/cn13873623.jpg"
+  },
+  {
+    "id": 3,
+    "item": "shirts",
+    "name": "Long Sleeve T-Shirt",
+    "category": "womens",
+    "description": "Essential long sleeve white T-shirt made from soft cotton. A versatile and comfortable piece for layering or wearing on its own.",
+    "price": 19.99,
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://media.istockphoto.com/id/172414211/photo/long-sleeve-blank-white-tee-shirt-isolated-on-white.jpg?s=612x612&w=0&k=20&c=pKmsnzcFUK6w1WJBTd6w6b_Ta8kElutTeEiwjYdXELI="
+  },
+  {
+    "id": 4,
+    "item": "shorts",
+    "name": "Casual Shorts",
+    "category": "womens",
+    "description": "Comfortable casual shorts made from soft fabric. Great for everyday wear and relaxed settings.",
+    "price": 29.99,
+    "sizes": ["S", "M", "L"],
+    "image": "https://i5.walmartimages.com/asr/e4b11ac4-32a6-49a0-924c-4ff80e5988a5.b2873a3ea480c9f3d88dcf64a10198fb.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+  },
+  {
+    "id": 5,
+    "item": "shirts",
+    "name": "Plaid Button-Up Shirt",
+    "category": "mens",
+    "description": "Classic plaid button-up shirt made from lightweight fabric. Ideal for casual and semi-formal occasions.",
+    "price": 34.99,
+    "sizes": ["M", "L", "XL"],
+    "image": "https://media.istockphoto.com/id/1083383944/photo/shirt-isolated-white.jpg?s=612x612&w=0&k=20&c=wd7kYvOf4wKEba29e40bQ20IEtuI7s-3i0HENwTakKw="
+  },
+  {
+    "id": 6,
+    "item": "sweaters",
+    "name": "Knitted Sweater",
+    "category": "womens",
+    "description": "Cozy knitted sweater ideal for chilly weather. Features a classic design and soft, warm material.",
+    "price": 64.99,
+    "sizes": ["S", "M", "L"],
+    "image": "https://media.istockphoto.com/id/1383561650/photo/yellow-sweater-isolated-on-white-trendy-womens-clothing-knitted-apparel-clothes-jumper.jpg?s=612x612&w=0&k=20&c=DG69byARMlY0g_keVTSbSUlnVDAPUE7oWfgDK4h7rUU="
+  },
+  {
+    "id": 7,
+    "item": "pants",
+    "name": "Leggings",
+    "category": "womens",
+    "description": "High-quality leggings designed for workouts. Stretchy and moisture-wicking for comfort and performance.",
+    "price": 39.99,
+    "sizes": ["S", "M", "L"],
+    "image": "https://image.harrods.com/alo-yoga-airbrush-bootcut-leggings_19212148_48566119_2048.jpg"
+  },
+  {
+    "id": 8,
+    "item": "jackets",
+    "name": "Wool Overcoat",
+    "category": "mens",
+    "description": "Elegant wool overcoat with a refined cut. Suitable for formal and professional settings.",
+    "price": 149.99,
+    "sizes": ["M", "L", "XL"],
+    "image": "https://media.istockphoto.com/id/175269131/photo/mens-black-coat.jpg?s=612x612&w=0&k=20&c=4H8zMds2SsqBdz4A8mQJkH_bruwsM0kx-tS6TbPxgjA="
+  },
+  {
+    "id": 9,
+    "item": "hoodies",
+    "name": "Basic Hoodie",
+    "category": "mens",
+    "description": "Comfortable hoodie with a simple design. Made from soft material for everyday wear.",
+    "price": 49.99,
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://img.freepik.com/premium-photo/men-s-hoodie-white-background_830198-4004.jpg"
+  },
+  {
+    "id": 10,
+    "item": "accessories",
+    "name": "Leather Wallet",
+    "category": "mens",
+    "description": "Premium leather wallet with multiple card slots and a sleek design. Perfect for keeping your essentials organized.",
+    "price": 49.99,
+    "sizes": ["Standard"],
+    "image": "https://static.vecteezy.com/system/resources/previews/002/086/265/large_2x/brown-leather-wallet-on-white-background-free-photo.jpg"
+  },
+  {
+    "id": 11,
+    "item": "footwear",
+    "name": "Running Shoes",
+    "category": "womens",
+    "description": "Lightweight running shoes with excellent cushioning and support for long-distance runs.",
+    "price": 79.99,
+    "sizes": ["6", "7", "8", "9"],
+    "image": "https://media.istockphoto.com/id/1168124826/photo/pink-shoes-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=G2suY7PbllUE5RAchs96ZV_fLmKxBEuWO1m5cTIvaVc="
+  },
+  {
+    "id": 12,
+    "item": "shirts",
+    "name": "Graphic T-Shirt",
+    "category": "mens",
+    "description": "Casual graphic t-shirt with a trendy design. Made from 100% cotton for all-day comfort.",
+    "price": 24.99,
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://i.ebayimg.com/images/g/M4MAAOSwcYVhpAiL/s-l1200.jpg"
+  },
+  {
+    "id": 13,
+    "item": "pants",
+    "name": "Jeans",
+    "category": "womens",
+    "description": "Classic blue jeans with a comfortable fit and stylish look. Perfect for everyday wear.",
+    "price": 49.99,
+    "sizes": ["S", "M", "L"],
+    "image": "https://media.istockphoto.com/id/122279648/photo/pair-of-womens-blue-denim-jeans.jpg?s=612x612&w=0&k=20&c=vcSALAA0M7I0Afd1hO44stYQOT_crXuH9VC6tk1sqjk="
+  },
+  {
+    "id": 14,
+    "item": "sweaters",
+    "name": "Cardigan Sweater",
+    "category": "womens",
+    "description": "Elegant cardigan sweater with a soft texture. Ideal for layering and adding style to any outfit.",
+    "price": 54.99,
+    "sizes": ["S", "M", "L"],
+    "image": "https://m.media-amazon.com/images/I/81ihnS8CwCL._AC_SY350_QL65_.jpg"
+  },
+  {
+    "id": 15,
+    "item": "jackets",
+    "name": "Leather Jacket",
+    "category": "mens",
+    "description": "Stylish leather jacket with a modern design. Durable and perfect for adding an edge to your look.",
+    "price": 129.99,
+    "sizes": ["M", "L", "XL"],
+    "image": "https://m.media-amazon.com/images/I/71Tzkg33ILL._AC_SX679_.jpg  "
+  },
+  {
+    "id": 16,
+    "item": "accessories",
+    "name": "Sunglasses",
+    "category": "unisex",
+    "description": "Trendy sunglasses with UV protection. Stylish and perfect for sunny days.",
+    "price": 29.99,
+    "sizes": ["Standard"],
+    "image": "https://www.shutterstock.com/image-photo/gold-frame-aviator-black-sunglasses-600nw-787378555.jpg  "
+  },
+  {
+    "id": 17,
+    "item": "pants",
+    "name": "Cargo Pants",
+    "category": "mens",
+    "description": "Durable cargo pants with multiple pockets. Ideal for outdoor activities and casual wear.",
+    "price": 59.99,
+    "sizes": ["M", "L", "XL"],
+    "image": "https://thumbs.dreamstime.com/b/cargo-pants-men-flat-isolated-white-background-cargo-pants-isolated-white-137439939.jpg"
+  },
+  {
+    "id": 18,
+    "item": "shirts",
+    "name": "V-Neck T-Shirt",
+    "category": "womens",
+    "description": "Simple V-neck t-shirt made from soft material. A comfortable and versatile wardrobe staple.",
+    "price": 19.99,
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://cricut.com/dw/image/v2/BHBM_PRD/on/demandware.static/-/Sites-cricut-master-catalog/default/dw5681fb98/images//4/7/477638_new_t_shirt_imagery_form_photography_whitevneck_onform.0085.jpg?sw=527&q=65"
+  },
+  {
+    "id": 19,
+    "item": "hoodies",
+    "name": "Hooded Sweater",
+    "category": "mens",
+    "description": "Warm hooded sweater with a casual design. Perfect for chilly days and everyday comfort.",
+    "price": 69.99,
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://m.media-amazon.com/images/I/61wGlDYi5qL.jpg"
+  },
+  {
+    "id": 20,
+    "item": "shorts",
+    "name": "Denim Shorts",
+    "category": "womens",
+    "description": "Trendy denim shorts with a comfortable fit. Perfect for summer and casual outings.",
+    "price": 34.99,
+    "sizes": ["S", "M", "L"],
+    "image": "https://img.freepik.com/premium-photo/denim-shorts-isolated-white-background_176402-8788.jpg"
+  }
+]

@@ -1,0 +1,129 @@
+.cartOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartContainer {
+  width: 400px;
+  height: 100%;
+  background-color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  margin: 10px 0;
+}
+
+.itemImgAndNameAndSize {
+  display: flex;
+}
+
+.cartItems {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.itemImage {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.itemDetails {
+  flex-grow: 1;
+}
+
+.itemName {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.itemSize {
+  margin: 17px;
+  margin-left: 8px;
+}
+
+.itemPrice {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.itemQuantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantityBtn {
+  width: 30px;
+  height: 30px;
+  background-color: var(--light-gray);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantityInput {
+  width: 40px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.increaseDecreaseQuantity {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.removeItem {
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 70px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.cartFooter {
+  margin-top: 20px;
+}
+
+.cartTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.checkoutBtn {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.checkoutBtn:hover {
+  background-color: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+  .itemSize {
+    font-size: 1rem;
+  }
+}

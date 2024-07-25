@@ -1,0 +1,13 @@
+.promoTextContainer {
+  background-color: var(--accent-color);
+  color: var(--white);
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .promoTextContainer {
+    margin-top: 3rem;
+  }
+}

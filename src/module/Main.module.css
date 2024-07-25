@@ -1,0 +1,125 @@
+.main {
+  padding: 60px 0;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 60px;
+  color: var(--primary-color);
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.itemCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.itemCard:hover {
+  transform: translateY(-5px);
+}
+
+.itemImgContainer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.itemImage {
+  width: 100%;
+  height: auto;
+  object-position: top;
+}
+
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: var(--white);
+}
+
+.itemDetails ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.itemDetails li {
+  margin-bottom: 10px;
+}
+
+.noItemsFound {
+  font-size: 3rem;
+  width: 100vw;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.addToCartButton {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addToCartButton:hover {
+  background-color: var(--hover-color);
+}
+
+.browseClothing {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.browseClothing:hover {
+  color: var(--hover-color);
+}
+
+.faShoppingCart {
+  margin: 0 8px;
+}
+
+.faArrowRight {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+  }
+
+  .itemImgContainer {
+    margin: -5rem 0;
+  }
+
+  .noItemsFound {
+    font-size: 2rem;
+    width: 92vw;
+  }
+}
