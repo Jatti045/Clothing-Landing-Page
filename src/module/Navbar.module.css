@@ -102,8 +102,14 @@
     left: 70%;
   }
 
+  .browseItems {
+    margin-top: 0;
+    border-top: 1px solid var(--text-color);
+    border-radius: 0;
+  }
+
   .browseItems ul {
     display: grid;
-    height: 90vh;
+    height: 94vh;
   }
 }
