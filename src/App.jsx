@@ -17,9 +17,15 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/Clothing-Landing-Page" element={<HomePage />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
-        <Route path="/shopAll" element={<ShopAllPage />} />
-        <Route path="/item/:id" element={<ItemPage />} />
+        <Route
+          path="/Clothing-Landing-Page/checkout"
+          element={<CheckoutPage />}
+        />
+        <Route
+          path="/Clothing-Landing-Page/shopAll"
+          element={<ShopAllPage />}
+        />
+        <Route path="/Clothing-Landing-Page/item/:id" element={<ItemPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

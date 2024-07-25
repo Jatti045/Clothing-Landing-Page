@@ -8,7 +8,7 @@ const Header = () => {
         <div className={styles.bannerContainerTextBtn}>
           <p>Welcome to Luna</p>
           <h1>Luna: Timeless Elegance, Modern Style</h1>
-          <Link to="/shopAll">
+          <Link to="/Clothing-Landing-Page/shopAll">
             <button>Shop all</button>
           </Link>
         </div>

@@ -33,7 +33,7 @@ const Navbar = () => {
         className={styles.hamburgerMenu}
         onClick={toggleShopStatus}
       />
-      <Link className={styles.logo} to="/Clothing-Landing-Page">
+      <Link className={styles.logo} to="/Clothing-Landing-Page/">
         LUNA
       </Link>
       <div className={styles.navRight}>
@@ -52,7 +52,7 @@ const Navbar = () => {
           </span>
         </span>
         <span>
-          <Link to="/checkout" className={styles.bagIcon}>
+          <Link to="/Clothing-Landing-Page/checkout" className={styles.bagIcon}>
             <FontAwesomeIcon icon={faShoppingBag} />
           </Link>
         </span>
@@ -65,67 +65,103 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll">
+            <Link onClick={closeShopMenu} to="/Clothing-Landing-Page/shopAll">
               Shop All
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=mens">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=mens"
+            >
               Men's
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=womens">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=womens"
+            >
               Women's
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=unisex">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=unisex"
+            >
               Unisex
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=shirts">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=shirts"
+            >
               Shirts
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=pants">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=pants"
+            >
               Pants
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=shorts">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=shorts"
+            >
               Shorts
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=hoodies">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=hoodies"
+            >
               Hoodies
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=jackets">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=jackets"
+            >
               Jackets
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=underwear">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=underwear"
+            >
               Underwear
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=accessories">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=accessories"
+            >
               Accessories
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=socks">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=socks"
+            >
               Socks
             </Link>
           </li>
           <li>
-            <Link onClick={closeShopMenu} to="/shopAll?category=footwear">
+            <Link
+              onClick={closeShopMenu}
+              to="/Clothing-Landing-Page/shopAll?category=footwear"
+            >
               Footwear
             </Link>
           </li>
