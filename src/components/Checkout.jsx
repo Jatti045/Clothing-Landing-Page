@@ -43,24 +43,22 @@ const Checkout = () => {
                   </div>
                   <p className={styles.itemPrice}>${item.price.toFixed(2)}</p>
                   <div className={styles.itemQuantity}>
-                    <button
-                      className={`${styles.quantityBtn} ${styles.increaseDecreaseQuantity}`}
+                    <p className={styles.quantityInput}>
+                      Quantity: ({item.quantity})
+                    </p>
+                    <span
+                      className={`${styles.quantityBtn}`}
                       onClick={() => decreaseQuantity(item.id, item.size)}
                     >
                       <FontAwesomeIcon icon={faMinus} />
-                    </button>
-                    <input
-                      className={styles.quantityInput}
-                      type="number"
-                      value={item.quantity}
-                      readOnly
-                    />
-                    <button
-                      className={`${styles.quantityBtn} ${styles.increaseDecreaseQuantity}`}
+                    </span>
+
+                    <span
+                      className={`${styles.quantityBtn}`}
                       onClick={() => increaseQuantity(item.id, item.size)}
                     >
                       <FontAwesomeIcon icon={faPlus} />
-                    </button>
+                    </span>
                   </div>
                 </div>
                 <button

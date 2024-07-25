@@ -66,23 +66,16 @@
 .quantityBtn {
   width: 30px;
   height: 30px;
-  background-color: var(--light-gray);
   border: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
 }
 
 .quantityInput {
-  width: 40px;
   text-align: center;
-  margin: 0 5px;
-}
-
-.increaseDecreaseQuantity {
-  background-color: var(--primary-color);
-  color: var(--white);
 }
 
 .removeItem {
