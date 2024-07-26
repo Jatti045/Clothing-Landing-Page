@@ -34,7 +34,7 @@ const Navbar = () => {
         className={styles.hamburgerMenu}
         onClick={toggleShopStatus}
       />
-      <Link className={styles.logo} to="/Clothing-Landing-Page/">
+      <Link className={styles.logo} to="/">
         LUNA
       </Link>
       <div className={styles.navRight}>
@@ -45,7 +45,7 @@ const Navbar = () => {
           />
         </span>
         <span>
-          <Link to="/Clothing-Landing-Page/checkout" className={styles.bagIcon}>
+          <Link to="/checkout" className={styles.bagIcon}>
             <FontAwesomeIcon icon={faShoppingBag} />
           </Link>
         </span>
