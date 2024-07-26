@@ -27,11 +27,11 @@
 .navRight {
   display: flex;
   align-items: center;
-  margin-right: 10rem;
+  margin-right: 5rem;
 }
 
 .navRight span {
-  padding: 0 5px;
+  padding: 0 20px;
 }
 
 .bagIcon {
