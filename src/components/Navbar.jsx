@@ -13,6 +13,11 @@ import {
 
 const Navbar = () => {
   const [isShopMenuOpen, setIsShopMenuOpen] = useState(false);
+  {
+    isShopMenuOpen
+      ? (document.body.style.overflowY = "hidden")
+      : (document.body.style.overflowY = "auto");
+  }
 
   const toggleShopStatus = () => {
     setIsShopMenuOpen((prevState) => !prevState);
