@@ -11,21 +11,15 @@ import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Clothing-Landing-Page">
       <ScrollToTop />
       <Promo />
       <Navbar />
       <Routes>
-        <Route path="/Clothing-Landing-Page" element={<HomePage />} />
-        <Route
-          path="/Clothing-Landing-Page/checkout"
-          element={<CheckoutPage />}
-        />
-        <Route
-          path="/Clothing-Landing-Page/shopAll"
-          element={<ShopAllPage />}
-        />
-        <Route path="/Clothing-Landing-Page/item/:id" element={<ItemPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/shopAll" element={<ShopAllPage />} />
+        <Route path="/item/:id" element={<ItemPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
