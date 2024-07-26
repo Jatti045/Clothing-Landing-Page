@@ -68,6 +68,14 @@
   width: 100vw;
   color: var(--text-color);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 85px;
+}
+
+.noItemsFound p {
+  margin-left: 20px;
 }
 
 .addToCartButton {
@@ -120,6 +128,10 @@
 
   .noItemsFound {
     font-size: 2rem;
-    width: 92vw;
+    max-width: 90vw;
+  }
+
+  .noItemsFound p {
+    font-size: 1.5rem;
   }
 }

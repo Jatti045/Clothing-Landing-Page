@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
   faShoppingCart,
+  faShopSlash,
 } from "@fortawesome/free-solid-svg-icons";
 import { CartContext } from "../contexts/CartContext";
 
@@ -70,6 +71,7 @@ const Main = ({ index = 5 }) => {
           ))
         ) : (
           <div className={styles.noItemsFound}>
+            <FontAwesomeIcon icon={faShopSlash} />
             <p>Out of Stock</p>
           </div>
         )}
