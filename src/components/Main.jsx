@@ -44,7 +44,7 @@ const Main = ({ index = 5 }) => {
         {filteredItems.length > 0 ? (
           filteredItems.map((item) => (
             <div key={item.id} className={styles.itemCard}>
-              <Link to={`/Clothing-Landing-Page/item/${item.id}`}>
+              <Link to={`/item/${item.id}`}>
                 <div className={styles.itemImgContainer}>
                   <img
                     src={item.image}
@@ -58,7 +58,7 @@ const Main = ({ index = 5 }) => {
                   <li>{`${item.category} ${item.name}`}</li>
                   <li>${item.price.toFixed(2)}</li>
                 </ul>
-                <Link to={`/Clothing-Landing-Page/item/${item.id}`}>
+                <Link to={`/item/${item.id}`}>
                   <button className={styles.addToCartButton}>
                     <span className={styles.faShoppingCart}>
                       <FontAwesomeIcon icon={faShoppingCart} />
@@ -77,10 +77,7 @@ const Main = ({ index = 5 }) => {
         )}
       </div>
       <span>
-        <Link
-          className={styles.browseClothing}
-          to="/Clothing-Landing-Page/shopAll"
-        >
+        <Link className={styles.browseClothing} to="/shopAll">
           {index <= 5 ? "Browse our collection" : ""}
           <span className={styles.faArrowRight}>
             {index <= 5 ? <FontAwesomeIcon icon={faArrowRight} /> : ""}
