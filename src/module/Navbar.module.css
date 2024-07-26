@@ -98,7 +98,8 @@
 
   .navRight {
     position: absolute;
-    left: 70%;
+    left: 80%;
+    width: 40px;
   }
 
   .browseItems {
