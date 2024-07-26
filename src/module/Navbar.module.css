@@ -31,10 +31,9 @@
 }
 
 .navRight span {
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
-.searchIcon,
 .bagIcon {
   font-size: 1.5rem;
   margin-left: 10px;

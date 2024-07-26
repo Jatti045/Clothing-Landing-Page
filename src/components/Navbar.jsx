@@ -22,10 +22,6 @@ const Navbar = () => {
     setIsShopMenuOpen(false);
   };
 
-  const implementingFeature = () => {
-    alert("This feature still needs to be implemented.");
-  };
-
   return (
     <nav className={styles.navbar}>
       <FontAwesomeIcon
@@ -43,14 +39,7 @@ const Navbar = () => {
             icon={isShopMenuOpen ? faChevronUp : faChevronDown}
           />
         </span>
-        <span>
-          <span
-            className={styles.searchIcon}
-            onClick={() => implementingFeature()}
-          >
-            <FontAwesomeIcon icon={faSearch} />
-          </span>
-        </span>
+        <span></span>
         <span>
           <Link to="/Clothing-Landing-Page/checkout" className={styles.bagIcon}>
             <FontAwesomeIcon icon={faShoppingBag} />
