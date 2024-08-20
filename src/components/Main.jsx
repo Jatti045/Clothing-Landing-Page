@@ -27,10 +27,10 @@ const Main = ({ index = 5 }) => {
   const shuffledProducts = shuffleArray(clothingStoreProducts);
   const products = shuffledProducts
     .filter(
-      (item) =>
+      (product) =>
         selectedCategory === "Shop all" ||
-        item.item === selectedCategory ||
-        item.category === selectedCategory
+        selectedCategory === product.item ||
+        selectedCategory === product.category
     )
     .slice(0, index);
 
