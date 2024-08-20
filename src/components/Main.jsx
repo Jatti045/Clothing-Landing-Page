@@ -6,19 +6,26 @@ import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
-  faShoppingCart,
+  faExternalLinkAlt,
   faShopSlash,
 } from "@fortawesome/free-solid-svg-icons";
-import { CartContext } from "../contexts/CartContext";
 
 const Main = ({ index = 5 }) => {
   const location = useLocation();
-  const { addToCart } = useContext(CartContext);
 
   const queryParams = new URLSearchParams(location.search);
   const selectedCategory = queryParams.get("category") || "Shop all";
 
-  const filteredItems = clothingStoreProducts
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  const shuffledProducts = shuffleArray(clothingStoreProducts);
+  const products = shuffledProducts
     .filter(
       (item) =>
         selectedCategory === "Shop all" ||
@@ -41,8 +48,8 @@ const Main = ({ index = 5 }) => {
     <main className={styles.main}>
       <h1>{categoryHeader()}</h1>
       <div className={styles.mainContent}>
-        {filteredItems.length > 0 ? (
-          filteredItems.map((item) => (
+        {products.length > 0 ? (
+          products.map((item) => (
             <div key={item.id} className={styles.itemCard}>
               <Link to={`/item/${item.id}`}>
                 <div className={styles.itemImgContainer}>
@@ -61,9 +68,9 @@ const Main = ({ index = 5 }) => {
                 <Link to={`/item/${item.id}`}>
                   <button className={styles.addToCartButton}>
                     <span className={styles.faShoppingCart}>
-                      <FontAwesomeIcon icon={faShoppingCart} />
+                      <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </span>
-                    ADD TO BAG
+                    View Product
                   </button>
                 </Link>
               </div>
