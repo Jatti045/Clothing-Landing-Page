@@ -11,7 +11,7 @@
 
 .mainContent {
   display: grid;
-  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
 }
 
@@ -40,9 +40,10 @@
 }
 
 .itemImage {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: 250px;
   object-position: top;
+  object-fit: contain;
 }
 
 .itemDetails {
@@ -117,11 +118,6 @@
 }
 
 @media (max-width: 768px) {
-  .mainContent {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 1rem;
-  }
-
   .itemImgContainer {
     margin: -5rem 0;
   }
