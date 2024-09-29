@@ -35,7 +35,7 @@ const Main = ({ index = 8 }) => {
     .slice(0, index);
 
   const categoryHeader = () => {
-    if (selectedCategory === "Shop all" && index === 5) {
+    if (selectedCategory === "Shop all" && index === 8) {
       return "Bestsellers";
     } else {
       return (
