@@ -10,7 +10,7 @@ import {
   faShopSlash,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Main = ({ index = 5 }) => {
+const Main = ({ index = 8 }) => {
   const location = useLocation();
 
   const queryParams = new URLSearchParams(location.search);
@@ -85,9 +85,9 @@ const Main = ({ index = 5 }) => {
       </div>
       <span>
         <Link className={styles.browseClothing} to="/shopAll">
-          {index <= 5 ? "Browse our collection" : ""}
+          {index <= 8 ? "Browse our collection" : ""}
           <span className={styles.faArrowRight}>
-            {index <= 5 ? <FontAwesomeIcon icon={faArrowRight} /> : ""}
+            {index <= 8 ? <FontAwesomeIcon icon={faArrowRight} /> : ""}
           </span>
         </Link>
       </span>

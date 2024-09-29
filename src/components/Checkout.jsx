@@ -23,7 +23,7 @@ const Checkout = () => {
 
   return (
     <div className={styles.cartOverlay}>
-      <div className={styles.cartContainer}>
+      <div className={`${styles.cartContainer} ${"shadow-md"}`}>
         <div className={styles.cartHeader}>
           <h2>Bag</h2>
         </div>

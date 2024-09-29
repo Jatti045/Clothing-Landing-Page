@@ -6,7 +6,7 @@
 
 .cartContainer {
   width: 400px;
-  height: 100%;
+  min-height: 250px;
   background-color: var(--white);
   padding: 20px;
   display: flex;

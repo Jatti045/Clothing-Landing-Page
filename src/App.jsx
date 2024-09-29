@@ -8,10 +8,12 @@ import Promo from "./components/Promo";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/ErrorPage";
+import { Toaster } from "./components/ui/toaster";
 
 function App() {
   return (
     <Router basename="/Clothing-Landing-Page">
+      <Toaster />
       <ScrollToTop />
       <Promo />
       <Navbar />

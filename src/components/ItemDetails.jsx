@@ -2,21 +2,30 @@ import React, { useContext, useState } from "react";
 import { CartContext } from "../contexts/CartContext";
 import styles from "../module/ItemDetails.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faShoppingCart,
-  faCheckCircle,
-} from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { useToast } from "../hooks/use-toast";
 
 const ItemDetails = ({ item }) => {
+  const { toast } = useToast();
   const { addToCart } = useContext(CartContext);
   const [selectedSize, setSelectedSize] = useState("");
   const [icon, setIcon] = useState(faShoppingCart);
 
   const handleAddToCart = () => {
     if (selectedSize) {
-      addToCart({ ...item, size: selectedSize });
-      setIcon(faCheckCircle);
-      setTimeout(() => setIcon(faShoppingCart), 2000);
+      try {
+        addToCart({ ...item, size: selectedSize });
+        toast({
+          description: "Item Added to Cart",
+          duration: 3000,
+        });
+      } catch (error) {
+        console.error(error);
+        toast({
+          title: "Uh oh! Something went wrong.",
+          description: "Please try again.",
+        });
+      }
     } else {
       alert("Please select a size.");
     }
@@ -52,8 +61,7 @@ const ItemDetails = ({ item }) => {
           </select>
         </div>
         <button className={styles.addToCartButton} onClick={handleAddToCart}>
-          <FontAwesomeIcon icon={icon} className={styles.icon} />
-          {icon === faShoppingCart ? " ADD TO BAG" : " ADDED TO BAG!"}
+          <FontAwesomeIcon icon={icon} className={styles.icon} /> Add to Cart
         </button>
       </div>
     </div>

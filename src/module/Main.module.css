@@ -11,7 +11,7 @@
 
 .mainContent {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .itemImage {
-  max-width: 100%;
+  max-width: 250px;
   max-height: 250px;
   object-position: top;
   object-fit: contain;
